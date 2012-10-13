@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+		http://www.sprin gframework.org/schema/beans http://www.sprin gframework.org/schema/beans/sprin g-beans-2.5.xsd ">
+
+	<bean id="test_postgresql_datasource" class="com.tx.core.datasource.DataSourceFactoryBean">
+		<property name="jndiName" value="test_postgresql_db"></property>
+	</bean>
+	<alias name="test_postgresql_datasource" alias="datasource" />
+	
+</beans>
